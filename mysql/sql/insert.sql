@@ -7,21 +7,21 @@ INSERT INTO member (
     ,tel
     ,gender
     ,email
-    ,adrress
+    ,address
     ,pwd
     ,zipcode
     )
     
     VALUES (
-		"I"
-        ,"asdf9"
-        ,"950522"
-        ,"01088888888"
-        ,"F"
-        ,"asdf9@naver.com"
-        ,"seoul"
-        ,"7777"
-        ,"38321"
+		"K"
+        ,"asdf11"
+        ,"950520"
+        ,"01010101010"
+        ,"M"
+        ,"asdf11@naver.com"
+        ,""
+        ,"9999"
+		,"93595"
 	)
     ;
     
@@ -33,7 +33,7 @@ INSERT INTO member (
 	,tel
 	,gender
 	,email
-	,adrress
+	,address
     ,pwd
     ,zipcode
     
@@ -46,7 +46,7 @@ INSERT INTO member (
         -- AND pwd = "4444"
         -- AND dob = "950531"
         -- AND email = "kdw12@naver.com"
-        -- AND adrress = "busan"
+        -- AND address "busan"
 		-- AND zipcode = "56789"
         -- AND id = "kdw12"
         -- AND tel = "01077777777"
@@ -74,8 +74,65 @@ INSERT INTO member (
         )
         ;
         
-        SELECT * FROM member;
+        SELECT * FROM member; 
         SELECT * FROM orderr;
+        
+INSERT INTO product (
+	category
+    ,image
+    ,brand
+    ,name
+	,rating
+    ,discount_percent
+    ,price_original
+    ,price_discount
+    ,delivery_info
+    ,detailImage
+    ,country_of_origin
+    ,ingestion_method
+    ,product_number
+    )
+    
+    Values (
+    "햄통조림"
+    ,""
+    ,"동원"
+    ,"비비고 삼계탕"
+    ,"5"
+    ,"18"
+    ,"29940"
+    ,"24420"
+    ,"7월19일"
+    ,""
+    ,"상품 상세설명 참조"
+    ,"즉석완조리식품"
+    ,"1331834602 - 318165234"
+)
+;
+
+SELECT
+seq
+category
+,image
+,brand
+,name
+,rating
+,discount_percent
+,price_original
+,price_discount
+,delivery_info
+,detailImage
+,country_of_origin
+,ingestion_method
+,product_number
+    
+FROM product;
+    
+    
+    
+    
+    
+    
 		
     
     

@@ -36,3 +36,29 @@ SELECT * from member2;
 -- name = ""
 -- , nameENG=""
 -- where seq =1;
+
+-- where
+
+SELECT * FROM member
+WHERE 1=1
+-- AND name like 'C%'
+-- ANd name like '%C'
+AND name like '%C%'
+;
+
+SELECT * FROM member
+WHERE 1=1
+-- AND seq = 1
+-- AND seq > 1
+-- AND seq >= 1
+AND seq between 4 and 7
+;
+
+SELECT * FROM member
+WHERE 1=1
+-- AND address is null
+AND address = ''
+-- AND address = null
+;
+
+
