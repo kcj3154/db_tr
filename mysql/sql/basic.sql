@@ -18,7 +18,7 @@ SELECT * from member2;
 -- ALTER TABLE member2 MODIFY COLUMN nickname varchar(100);
 
 -- 컬럼 이름 변경
--- ALTER TABLE member2 CHANGE COLUMN nickname nick varchar(45);
+-- ALTER TABLE member2 CHANGE COLUMN nickname niproduct_commentck varchar(45);
 
 -- 컬럼 삭제
  -- ALTER TABLE member2 drop COLUMN nick;

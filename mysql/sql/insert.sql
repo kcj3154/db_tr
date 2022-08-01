@@ -13,15 +13,15 @@ INSERT INTO member (
     )
     
     VALUES (
-		"K"
-        ,"asdf11"
-        ,"950520"
-        ,"01010101010"
-        ,"M"
-        ,"asdf11@naver.com"
-        ,""
-        ,"9999"
-		,"93595"
+		"J"
+        ,"asd9"
+        ,"950522"
+        ,"01088888888"
+        ,"F"
+        ,"asd9@gmail.com"
+        ,"인천"
+        ,"8765"
+		,"12343"
 	)
     ;
     
@@ -52,81 +52,73 @@ INSERT INTO member (
         -- AND tel = "01077777777"
     ;    
     
-	INSERT INTO product (
-		seq
-		)
-    
-		Values (
-        1
-	)
-	;
-    
-    INSERT INTO orderr (
-		member_seq
-        ,product_seq
-        ,payment_method
-        )
-        
-        Values (
-        "5"
-        ,"1"
-        ,"kakaopay"
-        )
-        ;
-        
-        SELECT * FROM member; 
-        SELECT * FROM orderr;
-        
 INSERT INTO product (
-	category
-    ,image
+	seq
+	,category
     ,brand
     ,name
 	,rating
     ,discount_percent
     ,price_original
     ,price_discount
-    ,delivery_info
-    ,detailImage
     ,country_of_origin
-    ,ingestion_method
     ,product_number
     )
     
     Values (
-    "햄통조림"
-    ,""
-    ,"동원"
-    ,"비비고 삼계탕"
-    ,"5"
-    ,"18"
-    ,"29940"
-    ,"24420"
-    ,"7월19일"
-    ,""
-    ,"상품 상세설명 참조"
-    ,"즉석완조리식품"
-    ,"1331834602 - 318165234"
+   1
+   ,"햄 통조림"
+   ,"동원"
+   ,"비비고 삼계탕"
+   ,"5"
+   ,"18"
+   ,"29940"
+   ,"24420"
+   ,"국내산"
+   ,"1331834602 - 318165234"
 )
 ;
 
 SELECT
 seq
 category
-,image
 ,brand
 ,name
 ,rating
 ,discount_percent
 ,price_original
 ,price_discount
-,delivery_info
-,detailImage
 ,country_of_origin
-,ingestion_method
 ,product_number
     
 FROM product;
+    
+INSERT INTO orders (
+	member_seq
+	,product_seq
+	,payment_method
+	)
+	
+	Values (
+	"5"
+	,"1"
+	,"kakaopay"
+	)
+	;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        SELECT * FROM member; 
+        SELECT * FROM orders;
+        
+
     
     
     
