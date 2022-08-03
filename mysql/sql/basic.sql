@@ -10,7 +10,8 @@ USE CJ2;
 SELECT * from member2;
 
 -- 컬럼 추가
--- ALTER TABLE member2 ADD COLUMN nickname varchar(45);
+-- ALTER TABLE ccg ADD COLUMN codeGroup varchar(45);
+ 
 
 -- ALTER TABLE member2 ADD COLUMN nameEng varchar(45) AFTER name
 
@@ -18,7 +19,7 @@ SELECT * from member2;
 -- ALTER TABLE member2 MODIFY COLUMN nickname varchar(100);
 
 -- 컬럼 이름 변경
--- ALTER TABLE member2 CHANGE COLUMN nickname niproduct_commentck varchar(45);
+-- ALTER TABLE delivery CHANGE COLUMN deliveryDate arrivalDate Date;
 
 -- 컬럼 삭제
  -- ALTER TABLE member2 drop COLUMN nick;

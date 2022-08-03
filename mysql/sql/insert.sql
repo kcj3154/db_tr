@@ -66,7 +66,7 @@ INSERT INTO product (
     )
     
     Values (
-   1
+   2
    ,"햄 통조림"
    ,"동원"
    ,"비비고 삼계탕"
@@ -92,27 +92,94 @@ category
 ,product_number
     
 FROM product;
+
+
+
     
 INSERT INTO orders (
-	member_seq
-	,product_seq
-	,payment_method
+	
+	price
+	,quantity
+    ,product_seq
+    ,member_seq
+    ,orderDate
 	)
 	
 	Values (
-	"5"
-	,"1"
-	,"kakaopay"
-	)
+	
+	""
+	,""
+	,""
+    ,""
+    ,""
+    )
 	;
+
+SELECT
+	seq
+	,price
+	,quantity
+    ,product_seq
+    ,member_seq
+    ,orderDate
+	
+    From orders;
+    
+    
+    INSERT INTO delivery (
+		orders_seq
+        ,arrivalDate
+        )
+        
+		Values (
+        "10"
+        ,"2022-08-04"
+        )
+        ;
+   
+	SELECT
+    orders_seq
+	,arrivalDate
+    
+    From depayment_methodlivery;
+        
+    
+    INSERT INTO payment (
+		orders_seq
+        ,payment_method
+        )
         
         
+		Values (
+        "10"
+		,"creditCard"
+        )
+        ;
         
         
+        SELECT
+        orders_seq
+        ,payment_method
+	
+        From payment;
         
-        
-        
-        
+
+INSERT INTO ccg (
+	codeGroup
+    ,useNy
+    )
+    
+    Values (
+    "telecom"
+    ,"email"
+    )
+    ;
+    
+    SELECT
+    codeGroup
+    ,useNy
+    
+    From ccg;
         
         
         SELECT * FROM member; 

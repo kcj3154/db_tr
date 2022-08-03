@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `CJ2`.`favorite` (
   `product_seq` INT NOT NULL,
   PRIMARY KEY (`seq`),
   INDEX `fk_favorite_member1_idx` (`member_seq` ASC) VISIBLE,
-  INDEX `fk_favorite_product1_idx` (`product_seq` ASC) VISIBLE,
+  INDEX `fk_favoritmembere_product1_idx` (`product_seq` ASC) VISIBLE,
   CONSTRAINT `fk_favorite_member1`
     FOREIGN KEY (`member_seq`)
     REFERENCES `CJ2`.`member` (`seq`)
@@ -107,6 +107,28 @@ CREATE TABLE IF NOT EXISTS `CJ2`.`product_comment` (
   CONSTRAINT `fk_product_comment_product1`
     FOREIGN KEY (`product_seq`)
     REFERENCES `CJ2`.`product` (`seq`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+;
+
+CREATE TABLE IF NOT EXISTS `CJ2`.`ccg` (
+  `seq` INT NOT NULL AUTO_INCREMENT,
+  `codeGroup` VARCHAR(45) NULL,
+  `useNy` VARCHAR(45) NULL,
+  PRIMARY KEY (`seq`))
+ENGINE = InnoDB
+;
+
+CREATE TABLE IF NOT EXISTS `CJ2`.`cc` (
+  `seq` INT NOT NULL AUTO_INCREMENT,
+  `codeName` VARCHAR(45) NULL,
+  `ccg_seq` INT NOT NULL,
+  PRIMARY KEY (`seq`),
+  INDEX `fk_cc_ccg1_idx` (`ccg_seq` ASC) VISIBLE,
+  CONSTRAINT `fk_cc_ccg1`
+    FOREIGN KEY (`ccg_seq`)
+    REFERENCES `CJ2`.`ccg` (`seq`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
