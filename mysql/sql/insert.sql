@@ -165,23 +165,31 @@ SELECT
         
 
 INSERT INTO ccg (
-	codeGroup
+	seq
+	,codeGroup
     ,useNy
     )
     
     Values (
-    "telecom"
-    ,"email"
+    "3"
+    ,"gender"
+    ,"1"
     )
     ;
     
     SELECT
-    codeGroup
+    seq
+    ,codeGroup
     ,useNy
     
     From ccg;
         
         
+        
+        
+        
+        
+        SELECT * FROM ccg;
         SELECT * FROM member; 
         SELECT * FROM orders;
         

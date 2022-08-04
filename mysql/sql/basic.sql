@@ -7,13 +7,12 @@ USE CJ2;
 
 
 -- 전체 컬럼 조회
-SELECT * from member2;
+-- SELECT * from member2;
 
 -- 컬럼 추가
--- ALTER TABLE ccg ADD COLUMN codeGroup varchar(45);
+-- ALTER TABLE member ADD COLUMN emailCode varchar(45);
  
-
--- ALTER TABLE member2 ADD COLUMN nameEng varchar(45) AFTER name
+-- ALTER TABLE member ADD COLUMN telecomCode varchar(45) AFTER tel
 
 -- 컬럼 변경
 -- ALTER TABLE member2 MODIFY COLUMN nickname varchar(100);
@@ -22,15 +21,15 @@ SELECT * from member2;
 -- ALTER TABLE delivery CHANGE COLUMN deliveryDate arrivalDate Date;
 
 -- 컬럼 삭제
- -- ALTER TABLE member2 drop COLUMN nick;
+-- ALTER TABLE member drop COLUMN emailCode;
  
  -- row 삭제
  
  -- DELETE FROM member WHERE seq = 10;
- 
+
  -- commit / rollback
  
- SELECT * from member2;
+-- SELECT * from member2;
 
 -- 데이터 수정
 -- UPDATE member2 SET
@@ -40,11 +39,11 @@ SELECT * from member2;
 
 -- where
 
-SELECT * FROM member
-WHERE 1=1
+-- SELECT * FROM member
+-- WHERE 1=1
 -- AND name like 'C%'
 -- ANd name like '%C'
-AND name like '%C%'
+-- AND name like '%C%'
 ;
 
 SELECT * FROM member
