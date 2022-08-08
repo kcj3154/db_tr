@@ -8,6 +8,7 @@ INSERT INTO member (
     ,gender
     ,email
     ,address
+    ,detailedAdress
     ,pwd
     ,zipcode
     )
@@ -20,6 +21,7 @@ INSERT INTO member (
         ,"F"
         ,"asd9@gmail.com"
         ,"인천"
+        ,"d"
         ,"8765"
 		,"12343"
 	)
@@ -37,7 +39,7 @@ INSERT INTO member (
     ,pwd
     ,zipcode
     
-    FROM member
+    FROM member;
     
     -- WHERE 1=1
 		-- AND seq = 1
@@ -66,7 +68,7 @@ INSERT INTO product (
     )
     
     Values (
-   2
+   1
    ,"햄 통조림"
    ,"동원"
    ,"비비고 삼계탕"
@@ -81,7 +83,7 @@ INSERT INTO product (
 
 SELECT
 seq
-category
+,category
 ,brand
 ,name
 ,rating
@@ -92,9 +94,6 @@ category
 ,product_number
     
 FROM product;
-
-
-
     
 INSERT INTO orders (
 	
@@ -194,8 +193,10 @@ INSERT INTO ccg (
         SELECT * FROM orders;
         
 
-    
-    
+
+
+insert into product_comment (
+
     
     
     
