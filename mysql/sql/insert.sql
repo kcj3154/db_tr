@@ -8,7 +8,7 @@ INSERT INTO member (
     ,gender
     ,email
     ,address
-    ,detailedAdress
+    ,detailedAddress
     ,pwd
     ,zipcode
     )
@@ -21,7 +21,7 @@ INSERT INTO member (
         ,"F"
         ,"asd9@gmail.com"
         ,"인천"
-        ,"d"
+        ,"102동 1102호"
         ,"8765"
 		,"12343"
 	)
@@ -36,6 +36,7 @@ INSERT INTO member (
 	,gender
 	,email
 	,address
+    ,detailedAddress
     ,pwd
     ,zipcode
     
@@ -189,13 +190,12 @@ INSERT INTO ccg (
         
         
         SELECT * FROM ccg;
-        SELECT * FROM member; 
-        SELECT * FROM orders;
+		SELECT * FROM orders;
         
 
 
 
-insert into product_comment (
+
 
     
     

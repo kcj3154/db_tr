@@ -2,13 +2,14 @@ Use CJ2;
 
 
 -- 수정
--- UPDATE member SET id = "" WHERE seq = 1;
+-- UPDATE product SET id = "" WHERE seq = 9;
 
 -- 시작
 -- ALTER TABLE member AUTO_INCREMENT = 10;
 
 -- 삭제 
--- delete from orders where seq = 10;	
+ delete from member where seq = 12;
+
 
 -- 컬럼 삭제
 -- ALTER TABLE `delivery` DROP `arrivalDate`;
@@ -20,3 +21,4 @@ Use CJ2;
 
 
 Drop table ccg;
+
