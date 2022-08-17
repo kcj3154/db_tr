@@ -29,3 +29,26 @@ order by
 ;
 
 
+select
+	a.seq
+	,a.id
+    ,a.name
+    ,b.quantity
+from member a
+left join orders b on b.member_seq = a.seq
+-- inner join orders b on b.member_seq = a.seq
+where 1=1
+	and quantity like '%1%'
+union
+select
+	a.seq
+	,a.id
+    ,a.name
+    ,b.quantity
+from member a
+left join orders b on b.member_seq = a.seq
+-- inner join orders b on b.member_seq = a.seq
+where 1=1
+	and quantity like '%2%'
+    ;
+
