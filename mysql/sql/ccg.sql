@@ -1,0 +1,1 @@
+SELECT * FROM CJ2.ccg;

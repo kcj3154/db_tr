@@ -3,7 +3,6 @@ use CJ2;
 select * from member;
 
 -- select count(*) from member;
-
 select
 	a.seq
 	,a.id
