@@ -10,6 +10,8 @@ Use CJ2;
 -- 삭제 
  delete from member where seq = 12;
 
+-- 추가
+-- alter table cc add column int after address_dtail;
 
 -- 컬럼 삭제
 -- ALTER TABLE `delivery` DROP `arrivalDate`;
