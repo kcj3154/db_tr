@@ -5,10 +5,10 @@ Use CJ2;
 -- UPDATE product SET id = "" WHERE seq = 9;
 
 -- 시작
--- ALTER TABLE member AUTO_INCREMENT = 10;
+ ALTER TABLE ccg AUTO_INCREMENT = 4;
 
 -- 삭제 
- delete from member where seq = 12;
+ delete from ccg where seq = 29;
 
 -- 추가
 -- alter table cc add column int after address_dtail;

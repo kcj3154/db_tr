@@ -1,5 +1,20 @@
 use CJ2;
 
+
+        
+        
+INSERT INTO ccg (
+	codeGroup
+    ,codeGroupEn
+    ,useNy
+)
+VALUES (
+	'통신사'
+    ,'carrier'
+    ,1
+)
+;	
+
 SELECT * FROM CJ2.ccg;
 
 SELECT
@@ -9,9 +24,6 @@ SELECT
 			,a.useNy
 			,a.reg_date
 			,a.mod_date
-			,COUNT(*) cnt
+			
 		FROM ccg a
 		LEFT JOIN cc b on a.seq = b.ccg_seq
-		GROUP BY a.seq
-        
-        
