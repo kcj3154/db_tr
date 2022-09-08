@@ -8,7 +8,7 @@ Use CJ2;
  ALTER TABLE ccg AUTO_INCREMENT = 4;
 
 -- 삭제 
- delete from ccg where seq = 29;
+ delete from ccg where seq = 5;
 
 -- 추가
 -- alter table cc add column int after address_dtail;
