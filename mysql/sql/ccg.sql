@@ -1,5 +1,7 @@
 use CJ2;
 
+select * from ccg;
+
 
         
         

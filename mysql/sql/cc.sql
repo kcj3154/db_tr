@@ -1,5 +1,9 @@
 use CJ2;
 
+select * from cc;
+
+alter table cc add delNy varchar(45) after useNy;   
+
 SELECT
 		c.seq
 		,c.ccg_seq
@@ -19,3 +23,5 @@ SELECT
 		seq
 		,codeGroup
 		from ccg
+        
+alter table cc add delNy varchar(45) after useNy;   
