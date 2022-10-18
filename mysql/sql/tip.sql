@@ -8,21 +8,20 @@ Use CJ2;
  ALTER TABLE member AUTO_INCREMENT = 11;
 
 -- 삭제 
- delete from product where seq = 11;
+ delete from product where seq = 1;
 
 -- 추가
- alter table member add adminNy int after seq;
+ alter table mainProductUploaded add regDateTimeSvr datetime after regDateTime ;
 
 -- 컬럼 삭제
- ALTER TABLE `product` DROP `brand`;
+ ALTER TABLE `mainProduct` DROP `productOriginalPrice`;
 
 -- 컬럼 이름 변경
- ALTER TABLE productUploaded RENAME COLUMN seq TO uploadedSeq;
+ ALTER TABLE mainProductUploaded RENAME COLUMN regDevicedCd TO regDeviceCd;
 
 -- RENAME TABLE orderr TO orders;
 
-alter table member modify column gender int;
-
+alter table mainProductUploaded modify column regSeq bigint;
 
 Drop table ccg;
 
