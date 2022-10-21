@@ -14,14 +14,14 @@ Use CJ2;
  alter table mainProductUploaded add regDateTimeSvr datetime after regDateTime ;
 
 -- 컬럼 삭제
- ALTER TABLE `mainProduct` DROP `productOriginalPrice`;
+ ALTER TABLE `product` DROP `idproduct`;
 
 -- 컬럼 이름 변경
  ALTER TABLE mainProductUploaded RENAME COLUMN regDevicedCd TO regDeviceCd;
 
 -- RENAME TABLE orderr TO orders;
 
-alter table mainProductUploaded modify column regSeq bigint;
+alter table memberUploaded modify column regSeq bigint;
 
 Drop table ccg;
 
